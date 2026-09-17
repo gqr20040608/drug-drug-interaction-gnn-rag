@@ -1,0 +1,7 @@
+python3 rgcn_runner.py \
+  --indir GNN_datasets \
+  --hidden 128 --out 128 --layers 2 \
+  --num_bases 8 --dropout 0.2 \
+  --lr 0.001 --weight_decay 0.0001 \
+  --epochs 50 --eval_every 5 \
+  --decoder distmult --seed 42 --patience 6
